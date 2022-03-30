@@ -6,6 +6,7 @@ from web_api.app import create_app
 from web_api.app import init_db, update_db
 from download import DownloadService
 from multiprocessing import Process
+print("aaa")
 
 
 def service():
