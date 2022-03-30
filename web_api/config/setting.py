@@ -22,10 +22,7 @@ class GlobalSetting(BaseSettings):
     WEB_DIR_HOME = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     DIR_SQL = os.path.join(WEB_DIR_HOME, 'sql')
     DIR_LOG = os.path.join(os.path.dirname(WEB_DIR_HOME), 'logs')
-    if platform.system() == "Darwin":
-        VIDEO_FILE_PATH = os.path.join(os.path.dirname(WEB_DIR_HOME), 'data/videos')
-    else:
-        VIDEO_FILE_PATH = "/var/lib/docker/volumes/opt_nextcloud/_data/data/realmaguodong/files/Movie/"
+    VIDEO_FILE_PATH = os.path.join(os.path.dirname(WEB_DIR_HOME), 'data/videos')
 
 
 class SettingDev(GlobalSetting):
